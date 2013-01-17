@@ -37,7 +37,7 @@ function get_classes($db) {
       $r["nav"]=$r["name"];
     }
     if (! $r["link"]) {
-      $r["link"]="index.php?class=".$r["id"];
+      $r["link"]="class.php?class=".$r["id"];
     }
     $classes[$r["id"]] = array("id"=>$r["id"],"nav"=>$r["nav"],"name"=>$r["name"],"link"=>$r["link"]);
   }

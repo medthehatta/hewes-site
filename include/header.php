@@ -1,3 +1,9 @@
+<?php 
+require_once("globals.php"); 
+$classes = $_SESSION["classes"];
+$classid = $_SESSION["classid"];
+?>
+
 <div id="header">
 
 <!--TITLE--!> 

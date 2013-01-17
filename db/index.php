@@ -5,7 +5,7 @@ function adminer_object() {
         
         function name() {
             // custom name in title and heading
-            return '<a href="http://mancer.in/~med/smarty/">Matt Hewes Teaching</a>';
+            return '<a href="/">Matt Hewes Teaching</a>';
         }
         
         function database() {

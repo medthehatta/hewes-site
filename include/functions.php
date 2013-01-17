@@ -12,7 +12,7 @@ function link_maybe($text,$url) {
 // DB FUNCTIONS
 function defaultdb() {
   try {
-    return new PDO("sqlite:../db/courses.db");
+    return new PDO("sqlite:db/courses.db");
   }
   catch(PDOException $e) {
     die($e->getMessage());

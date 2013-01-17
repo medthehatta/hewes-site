@@ -15,7 +15,4 @@ if (!isset($_SESSION["classes"])) {
 if (isset($_GET["class"])) {
   $_SESSION["classid"] = $_GET["class"];
 }
-if (!isset($_SESSION["classid"])) {
-  $_SESSION["classid"] = 1;
-}
 ?>

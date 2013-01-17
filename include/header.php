@@ -14,7 +14,7 @@ $classid = $_SESSION["classid"];
 <ul>
 <?php 
 foreach ($classes as $c) { 
-  if ($classes[$classid]["nav"]==$c["nav"]) { 
+  if ($classes[$classid]["nav"]!=$c["nav"]) { 
     echo "<li><a href='".$c["link"]."'>".$c["nav"]."</a></li>";
   } else {
     echo "<li><b><a href='".$c["link"]."'>".$c["nav"]."</a></b></li>";

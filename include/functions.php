@@ -27,7 +27,7 @@ function selectall($db,$sql) {
 
 // FUNCTION FOR RETRIEVING CLASSES
 function get_classes($db) {
-  $query = "SELECT id,nav,name,link FROM courses WHERE inactive IS NULL";
+  $query = "SELECT id,nav,name,link,supplemental FROM courses WHERE inactive IS NULL";
   $res = selectall($db,$query);
   // populate classes array
   $classes = array();
@@ -39,7 +39,7 @@ function get_classes($db) {
     if (! $r["link"]) {
       $r["link"]="class.php?class=".$r["id"];
     }
-    $classes[$r["id"]] = array("id"=>$r["id"],"nav"=>$r["nav"],"name"=>$r["name"],"link"=>$r["link"]);
+    $classes[$r["id"]] = array("id"=>$r["id"],"nav"=>$r["nav"],"name"=>$r["name"],"link"=>$r["link"],"supplemental"=>$r["supplemental"]);
   }
   return $classes;
 }

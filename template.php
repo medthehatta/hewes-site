@@ -9,7 +9,7 @@
 <div id="container">
 
 <div id="header">
-<h1>Home</h1>
+<h1><!-- ### PAGE TITLE GOES HERE ### --!></h1>
 </div>
 <?php require("include/course_menu.php"); ?>
 

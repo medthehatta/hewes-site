@@ -2,6 +2,7 @@
 <?php include("include/globals.php"); ?>
 <html>
 <head>
+<title><?php echo $classname . " - Matt Hewes Teaching"; ?></title>
 <link rel="stylesheet" href="hewes1.css"/>
 </head>
 

@@ -7,18 +7,19 @@
 
 <body>
 <div id="container">
+
 <div id="header">
 <h1>Home</h1>
-</div><!--/header--!>
-
+</div>
 <?php require("include/course_menu.php"); ?>
 
 <div id="content">
-<p>Home stuff goes here</p>
+<!-- ############################### --!>
+<!-- CONTENT GOES BETWEEN THESE DIVS --!>
+<!-- ############################### --!>
 </div>
 
 <?php require("include/footer.php"); ?>
-
 </div><!--/container--!>
 </body>
 </html>

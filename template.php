@@ -2,6 +2,7 @@
 <?php require("include/globals.php"); ?>
 <html>
 <head>
+<title><!-- ### PAGE TITLE GOES HERE (tab text) ### --!></title>
 <link rel="stylesheet" href="hewes1.css"/>
 </head>
 
@@ -9,7 +10,7 @@
 <div id="container">
 
 <div id="header">
-<h1><!-- ### PAGE TITLE GOES HERE ### --!></h1>
+<h1><!-- ### PAGE TITLE GOES HERE (header text) ### --!></h1>
 </div>
 <?php require("include/course_menu.php"); ?>
 

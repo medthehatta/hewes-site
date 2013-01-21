@@ -2,6 +2,7 @@
 <?php require("include/globals.php"); ?>
 <html>
 <head>
+<title>Home - Matt Hewes Teaching</title>
 <link rel="stylesheet" href="hewes1.css"/>
 </head>
 

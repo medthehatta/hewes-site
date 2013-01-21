@@ -46,20 +46,21 @@ function get_classes($db) {
 
 
 // FUNCTION FOR GETTING LESSON ENTRIES
+// the -8 hours adjust GMT to PST
 $duequery = <<<EOT
 SELECT * FROM
   (SELECT
-   date('now','+1 day') as "candidate"
-   UNION SELECT date('now','+2 day')
-   UNION SELECT date('now','+3 day')
-   UNION SELECT date('now','+4 day')
-   UNION SELECT date('now','+5 day')
-   UNION SELECT date('now','+6 day')
-   UNION SELECT date('now','+7 day')
-   UNION SELECT date('now','+8 day')
-   UNION SELECT date('now','+9 day')
-   UNION SELECT date('now','+10 day')
-   UNION SELECT date('now','+11 day')
+   date('now','-8 hours','+1 day') as "candidate"
+   UNION SELECT date('now','-8 hours','+2 day')
+   UNION SELECT date('now','-8 hours','+3 day')
+   UNION SELECT date('now','-8 hours','+4 day')
+   UNION SELECT date('now','-8 hours','+5 day')
+   UNION SELECT date('now','-8 hours','+6 day')
+   UNION SELECT date('now','-8 hours','+7 day')
+   UNION SELECT date('now','-8 hours','+8 day')
+   UNION SELECT date('now','-8 hours','+9 day')
+   UNION SELECT date('now','-8 hours','+10 day')
+   UNION SELECT date('now','-8 hours','+11 day')
    EXCEPT SELECT date FROM holidays)
 WHERE
   strftime("%w",candidate)!=0

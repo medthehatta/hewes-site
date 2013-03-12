@@ -10,4 +10,6 @@ Course Supplemental HTML
 ------------------------
 You can add supplemental HTML content to course pages.  Just author the content in a php file (you don't need the template for this, or <html> or <head> or whatever.  Just the specific snippets you want), put it in the class/ directory, and in the courses database table put the path to that php file (courses/physics1.php, for example).
 
-
+Your Old Stuff
+--------------
+Your old stuff is in the ``bak`` dir.  Lemme know if you need help migrating the content from there to the new format.

@@ -1,5 +1,5 @@
 <!doctype html>
-<?php require("/include/globals.php"); ?>
+<?php require($_SERVER['DOCUMENT_ROOT']."/include/globals.php"); ?>
 <html>
 <head>
 <title>Completing the Square</title>
@@ -13,7 +13,7 @@
 <div id="header">
 <h1>Completing the Square</h1>
 </div>
-<?php require("/include/course_menu.php"); ?>
+<?php require($_SERVER['DOCUMENT_ROOT']."/include/course_menu.php"); ?>
 
 <div id="content">
 Completing the square is a useful technique for <b>solving quadratic equations</b> that just can't be factored, or for <b>rewriting the equation of a parabola</b> into a more useful form. Either way, you start the process with the same set of steps:
@@ -72,7 +72,7 @@ Or you can always read your textbook ;-)
 
 </div>
 
-<?php require("/include/footer.php"); ?>
+<?php require($_SERVER['DOCUMENT_ROOT']."/include/footer.php"); ?>
 </div><!--/container--!>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!doctype html>
-<?php include("/include/globals.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/include/globals.php"); ?>
 <html>
 <head>
 <title><?php echo $classname . " - Matt Hewes Teaching"; ?></title>
@@ -11,16 +11,16 @@
 <div id="header">
 <h1><?php echo $classname; ?></h1>
 </div>
-<?php include("/include/course_menu.php"); ?>
-<?php include("/include/announcements.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/include/course_menu.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/include/announcements.php"); ?>
 
 <div id="content">
-<?php include("/include/course_requirements.php"); ?>
-<?php include("/include/supplement.php"); ?>
-<?php include("/include/course_lessons.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/include/course_requirements.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/include/supplement.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/include/course_lessons.php"); ?>
 </div><!--/content--!>
 
-<?php include("/include/footer.php"); ?>
+<?php include($_SERVER['DOCUMENT_ROOT']."/include/footer.php"); ?>
 </div><!--/container--!>
 </body>
 </html>

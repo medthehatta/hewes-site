@@ -1,5 +1,5 @@
 <!doctype html>
-<?php require("/include/globals.php"); ?>
+<?php require($_SERVER['DOCUMENT_ROOT']."/include/globals.php"); ?>
 <html>
 <head>
 <title>Home - Matt Hewes Teaching</title>
@@ -12,7 +12,7 @@
 <div id="header">
 <h1>Home</h1>
 </div>
-<?php require("/include/course_menu.php"); ?>
+<?php require($_SERVER['DOCUMENT_ROOT']."/include/course_menu.php"); ?>
 
 <div id="content">
 <!-- ############################### --!>
@@ -20,7 +20,7 @@
 <!-- ############################### --!>
 </div>
 
-<?php require("/include/footer.php"); ?>
+<?php require($_SERVER['DOCUMENT_ROOT']."/include/footer.php"); ?>
 </div><!--/container--!>
 </body>
 </html>
